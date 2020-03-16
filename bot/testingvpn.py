@@ -9,7 +9,7 @@ chrome_options.add_extension('./Windscribe-Free-VPN-and-Ad-Blocker-Уеб-маг
 
 driver = webdriver.Chrome(options=chrome_options)
 driver.get('https://windscribe.com/login')
-username, password = 'theweekencl', 'Cn57hksWy8xMTAe'
+username, password = '', ''
 time.sleep(5)
 username_box = driver.find_element_by_id('username')
 username_box.send_keys(username)

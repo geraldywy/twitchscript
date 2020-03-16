@@ -19,7 +19,7 @@ print('########################')
 print('If automation of mouse fails, possibly due to different screen size, check mouseclass and change mouse positions accordingly using mouseNow.py to determine position.')
 print('########################')
 print('Please log into vpn chrome extension.')
-username, password = 'theweekencl', 'Cn57hksWy8xMTAe'
+username, password = '', ''
 print(f'username: {username}, password: {password}')
 done = False
 while not done:

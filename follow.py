@@ -9,12 +9,12 @@ from bot import Bot
 from mouseclass import Mouse
 
 
-with open('C:/Users/Gerald/Desktop/bot/bot accounts', 'r') as f:
+with open('bot accounts', 'r') as f:
     next(f) #skip header
     content = f.readlines()
 
 chrome_options = webdriver.ChromeOptions()
-chrome_options.add_extension('C:/Users/Gerald/Desktop/bot/Windscribe-Free-VPN-and-Ad-Blocker-Уеб-магазин-на-Chrome_v2.4.1.crx')
+chrome_options.add_extension('Windscribe-Free-VPN-and-Ad-Blocker-Уеб-магазин-на-Chrome_v2.4.1.crx')
 chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
 prefs = {"profile.default_content_setting_values.notifications" : 2}
 chrome_options.add_experimental_option("prefs",prefs)
@@ -32,7 +32,7 @@ else:
     f = False
 print()
 print('Logging into vpn chrome extension. Do not touch the mouse or driver.')
-username, password = 'theweekencl', 'Cn57hksWy8xMTAe'
+username, password = '', ''
 print(f'username: {username}, password: **hidden**')
 mouse = Mouse()
 mouse.log_in_vpn()

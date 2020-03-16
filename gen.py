@@ -1,10 +1,10 @@
 import random
 
 def gen_userpass():
-    with open("C:/Users/Gerald/Desktop/bot/words.txt", 'r') as wordsfile:
+    with open("words.txt", 'r') as wordsfile:
         words_list = wordsfile.read().splitlines()
 
-    # wordsfile = open("C:/Users/Gerald/Desktop/words.txt", 'r')
+    # wordsfile = open("words.txt", 'r')
     # words_list = wordsfile.read().splitlines()
 
     random_userpass = words_list[random.randint(0, len(words_list)-1 )] + words_list[random.randint(0, len(words_list)-1 )] + str(random.randint(0,10000))
@@ -12,9 +12,9 @@ def gen_userpass():
     return random_userpass
 
 def gen_name():
-    with open('C:/Users/Gerald/Desktop/bot/firstnames.txt', 'r') as first:
+    with open('firstnames.txt', 'r') as first:
         firstnames = first.read().splitlines()
-    with open('C:/Users/Gerald/Desktop/bot/lastnames.txt', 'r') as last:
+    with open('lastnames.txt', 'r') as last:
         lastnames = last.read().splitlines()
     name = (firstnames[random.randint(0, len(firstnames)-1 )], lastnames[random.randint(0, len(lastnames)-1 )])
     return name

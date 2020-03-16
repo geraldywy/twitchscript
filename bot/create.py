@@ -19,7 +19,7 @@ driver = webdriver.Chrome(options=chrome_options)
 print('')
 n = int(input('Attempt to create how many bots? '))
 print('Logging into vpn chrome extension. Do not touch the mouse or driver.')
-username, password = 'theweekencl', 'Cn57hksWy8xMTAe'
+username, password = '', ''
 print(f'username: {username}, password: **hidden**')
 mouse = Mouse()
 mouse.log_in_vpn()

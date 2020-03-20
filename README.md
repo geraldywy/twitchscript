@@ -1,6 +1,6 @@
 # twitchscript
 
-Creates a facebook bot, verified by a temporary 10 minute email, links it to twitch to be verified on twitch as well.
+Creates a facebook bot, verified by a temporary email, links it to twitch to be verified on twitch as well.
 Stores bot information into a text file to be reused.
 
 bot.py acts as the main class, follow.py to specifically follow/chat, gen.py to specifically generate bots.
